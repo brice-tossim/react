@@ -17,7 +17,7 @@ This documentation provides instructions for setting up and running the project.
 ## Setup
 Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/bricioo/react.git
 cd memory-game
 ```
 
