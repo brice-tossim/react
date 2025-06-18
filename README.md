@@ -1,6 +1,6 @@
 # ⚛️ React Frontend Projects
 
-This repository showcases a collection of simple yet powerful React web projects. These applications highlight practical frontend development skills such as component-based architecture, state management, routing, API integration, and responsive UI design.
+This repository showcases a collection of simple yet powerful **React** web projects. These applications highlight practical frontend development skills such as component-based architecture, state management, routing, API integration, and responsive UI design.
 
 All projects are containerized with Docker to simplify setup and running, so you can skip the complex local configurations.
 
