@@ -1,4 +1,4 @@
-# Simple memory game built with React + TypeScript + Tailwind CSS
+# Simple memory game built with React + TypeScript + Tailwind CSS + Docker
 
 This documentation provides instructions for setting up and running the project.
 
