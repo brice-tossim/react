@@ -1,5 +1,5 @@
 services:
-  memory-game:
+  web:
     build:
       context: .
       dockerfile: Dockerfile
