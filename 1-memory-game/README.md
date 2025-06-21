@@ -4,7 +4,7 @@ This documentation provides instructions for setting up and running the project.
 
 <div>
   <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb">
-    <p>Memory Game</p>
+    <p>Preview</p>
   </a>
   <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb">
     <img
