@@ -1,5 +1,7 @@
 > ⚠️ **Warning:** This project is still under active development. Features and documentation may change frequently.
 
+<br /><br />
+
 # Find Your Movies built using React + TypeScript + Tailwind CSS + Docker
 
 This documentation provides instructions for setting up and running the project.
