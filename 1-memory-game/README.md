@@ -31,7 +31,7 @@ This documentation provides instructions for setting up and running the project.
 Clone the repository:
 
 ```bash
-git clone https://github.com/bricioo/react.git
+git clone https://github.com/brice-tossim/react.git
 cd 1-memory-game
 ```
 
