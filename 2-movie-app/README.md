@@ -33,7 +33,7 @@ This documentation provides instructions for setting up and running the project.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/bricioo/react.git
+git clone https://github.com/brice-tossim/react.git
 cd 2-movie-app
 ```
 
