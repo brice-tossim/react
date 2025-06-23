@@ -3,10 +3,10 @@
 This documentation provides instructions for setting up and running the project.
 
 <div>
-  <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb">
+  <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb" target="_blank">
     <p>Preview</p>
   </a>
-  <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb">
+  <a href="https://www.loom.com/share/f6f76bfd70e64538b2c7e88437dd49bb" target="_blank">
     <img
       style="max-width: 300px"
       src="https://cdn.loom.com/sessions/thumbnails/f6f76bfd70e64538b2c7e88437dd49bb-d34f71239a7c760a-full-play.gif"
