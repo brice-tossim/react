@@ -9,7 +9,7 @@ import { API_BASE_URL, API_OPTIONS } from "../config/constants.ts";
  * @param searchTerm - The search term to filter movies.
  * @returns An object containing movies, metrics, loading state, and error messages.
  */
-const useMoviesHook = (searchTerm: string) => {
+const useMovies = (searchTerm: string) => {
   // State variables for movies, metrics, loading, and error
   const [allMovies, setAllMovies] = useState<Movie[]>([]);
   const [errorMessage, setErrorMessage] = useState<string>("");
@@ -142,4 +142,4 @@ const useMoviesHook = (searchTerm: string) => {
   };
 };
 
-export default useMoviesHook;
+export default useMovies;

@@ -2,14 +2,13 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Spinner from "./components/Spinner";
 import AllMovies from "./components/AllMovies";
-import useMoviesHook from "./hooks/use-movies.hook.ts";
+import useMovies from "./hooks/use.movies.ts";
 import ErrorMessage from "./components/ErrorMessage";
 import Metrics from "./components/Metrics.tsx";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const { metrics, allMovies, errorMessage, isLoading } =
-    useMoviesHook(searchTerm);
+  const { metrics, allMovies, errorMessage, isLoading } = useMovies(searchTerm);
 
   return (
     <main>
