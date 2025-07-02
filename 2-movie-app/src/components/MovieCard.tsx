@@ -14,7 +14,7 @@ const MovieCard = ({
         src={
           poster_path ? `${IMAGE_BASE_URL}${poster_path}` : DEFAULT_POSTER_PATH
         }
-        alt="MovieTypes poster"
+        alt="Movie poster"
       />
 
       <div className="mt-4">
