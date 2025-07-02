@@ -1,4 +1,5 @@
-import type Movie from "../types/movie";
+import type { Movie } from "../types";
+import { DEFAULT_POSTER_PATH, IMAGE_BASE_URL } from "../config/constants.ts";
 
 interface MovieCardProps {
   movie: Movie;
@@ -11,11 +12,9 @@ const MovieCard = ({
     <div className="movie-card">
       <img
         src={
-          poster_path
-            ? `https://image.tmdb.org/t/p/w500${poster_path}`
-            : "./no-movie.png"
+          poster_path ? `${IMAGE_BASE_URL}${poster_path}` : DEFAULT_POSTER_PATH
         }
-        alt="Movie poster"
+        alt="MovieTypes poster"
       />
 
       <div className="mt-4">
@@ -23,7 +22,7 @@ const MovieCard = ({
 
         <div className="content">
           <div className="rating">
-            <img src="./star.svg" alt="Star" />
+            <img src="/star.svg" alt="Star" />
             <p>{vote_average ? vote_average.toFixed(1) : "N/A"}</p>
           </div>
           <span>•</span>
