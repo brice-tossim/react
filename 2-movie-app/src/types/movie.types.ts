@@ -1,4 +1,4 @@
-export default interface Movie {
+export interface Movie {
   id: number;
   backdrop_path: string;
   title: string;
@@ -7,4 +7,11 @@ export default interface Movie {
   vote_average: number;
   original_language: string;
   release_date: string;
+}
+
+export interface MovieResponse {
+  page: number;
+  results: Movie[];
+  total_pages: number;
+  total_results: number;
 }

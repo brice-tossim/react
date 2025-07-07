@@ -1,5 +1,5 @@
-import type Movie from "../types/movie";
 import MovieCard from "./MovieCard";
+import type { Movie } from "../types";
 
 interface AllMoviesProps {
   movies: Movie[];
