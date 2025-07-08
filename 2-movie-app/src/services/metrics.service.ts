@@ -2,7 +2,7 @@ import {
   COLLECTION_ID,
   DATABASE_ID,
   databases,
-} from "../config/appwrite.config.ts";
+} from "../config/appwrite.config";
 import { Query } from "appwrite";
 import type { MetricDocument, MetricListDocument } from "../types";
 

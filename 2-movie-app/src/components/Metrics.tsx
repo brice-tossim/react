@@ -14,7 +14,7 @@ const Metrics = ({ metrics }: MetricsProps) => {
             {metrics.map((metric: MetricDocument, index: number) => (
               <li key={metric.$id}>
                 <p>{index + 1}</p>
-                <img src={metric.poster_path} alt="Movie poster" />
+                <img src={metric.poster_path} alt={metric.movie_title} />
               </li>
             ))}
           </ul>

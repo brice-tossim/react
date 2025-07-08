@@ -2,9 +2,9 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Spinner from "./components/Spinner";
 import AllMovies from "./components/AllMovies";
-import useMovies from "./hooks/use-movies.ts";
+import useMovies from "./hooks/use-movies";
 import ErrorMessage from "./components/ErrorMessage";
-import Metrics from "./components/Metrics.tsx";
+import Metrics from "./components/Metrics";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");

@@ -1,5 +1,5 @@
 import type { Movie } from "../types";
-import { DEFAULT_POSTER_PATH, IMAGE_BASE_URL } from "../config/constants.ts";
+import { DEFAULT_POSTER_PATH, IMAGE_BASE_URL } from "../config/constants";
 
 interface MovieCardProps {
   movie: Movie;
