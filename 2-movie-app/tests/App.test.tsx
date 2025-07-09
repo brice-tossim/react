@@ -117,14 +117,14 @@ describe("App Component", () => {
     expect(mockUseMovies).toHaveBeenCalledWith("");
   });
 
-  // it("handles empty movie list", () => {
-  //   mockUseMovies.mockReturnValue({
-  //     ...defaultReturn,
-  //     allMovies: [],
-  //   });
-  //
-  //   render(<App />);
-  //   // Verify no movies are rendered
-  //   expect(screen.queryByText("Inception")).not.toBeInTheDocument();
-  // });
+  it("handles empty movie list", () => {
+    mockUseMovies.mockReturnValue({
+      ...defaultReturn,
+      allMovies: [],
+    });
+
+    render(<App />);
+    // Verify no movies are rendered
+    expect(screen.queryByText("Inception")).not.toBeInTheDocument();
+  });
 });
