@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "2-movie_app/**"
+      - "2-movie-app/**"
   pull_request:
     paths:
-      - "2-movie_app/**"
+      - "2-movie-app/**"
 
 jobs:
   build-and-test:
