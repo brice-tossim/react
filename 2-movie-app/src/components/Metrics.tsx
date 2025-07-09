@@ -8,13 +8,13 @@ const Metrics = ({ metrics }: MetricsProps) => {
   return (
     <>
       {metrics.length > 0 && (
-        <section className="trending">
+        <section className="trending" data-trending-movies="section">
           <h2>Trending Movies</h2>
           <ul>
             {metrics.map((metric: MetricDocument, index: number) => (
               <li key={metric.$id}>
                 <p>{index + 1}</p>
-                <img src={metric.poster_path} alt="Movie poster" />
+                <img src={metric.poster_path} alt={metric.movie_title} />
               </li>
             ))}
           </ul>

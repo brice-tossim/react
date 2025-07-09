@@ -3,8 +3,8 @@ import {
   COLLECTION_ID,
   DATABASE_ID,
   databases,
-} from "../config/appwrite.config.ts";
-import { IMAGE_BASE_URL } from "../config/constants.ts";
+} from "../config/appwrite.config";
+import { IMAGE_BASE_URL } from "../config/constants";
 import type { MetricDocument, Movie } from "../types";
 
 export const updateSearchCount = async (
@@ -32,6 +32,7 @@ export const updateSearchCount = async (
       await databases.createDocument(DATABASE_ID, COLLECTION_ID, ID.unique(), {
         search_term: searchTerm,
         movie_id: movie.id,
+        movie_title: movie.title,
         search_count: 1,
         poster_path: `${IMAGE_BASE_URL}${movie.poster_path}`,
       });

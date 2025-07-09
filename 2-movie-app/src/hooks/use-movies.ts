@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "react-use";
 import type { MetricDocument, Movie, MovieResponse } from "../types";
 import { getMetrics, updateSearchCount } from "../services";
-import { API_BASE_URL, API_OPTIONS } from "../config/constants.ts";
+import { API_BASE_URL, API_OPTIONS } from "../config/constants";
 
 /**
  * Custom hook for fetching and managing movie data and metrics.

@@ -1,5 +1,5 @@
 import type { Movie } from "../types";
-import { DEFAULT_POSTER_PATH, IMAGE_BASE_URL } from "../config/constants.ts";
+import { DEFAULT_POSTER_PATH, IMAGE_BASE_URL } from "../config/constants";
 
 interface MovieCardProps {
   movie: Movie;
@@ -14,7 +14,7 @@ const MovieCard = ({
         src={
           poster_path ? `${IMAGE_BASE_URL}${poster_path}` : DEFAULT_POSTER_PATH
         }
-        alt="Movie poster"
+        alt={title}
       />
 
       <div className="mt-4">
