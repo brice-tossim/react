@@ -1,6 +1,7 @@
 import { Client, Databases } from "appwrite";
 
-const ENDPOINT = import.meta.env.VITE_APPWRITE_ENDPOINT ?? "";
+const ENDPOINT =
+  import.meta.env.VITE_APPWRITE_ENDPOINT ?? "https://cloud.appwrite.io/v1";
 const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID ?? "";
 const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID ?? "";
 const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID ?? "";
