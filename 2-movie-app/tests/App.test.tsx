@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import App from "../src/App";
 import useMovies from "../src/hooks/use-movies";
@@ -72,8 +72,17 @@ describe("App Component", () => {
 
   it("displays trending movies section when metrics are available", () => {
     render(<App />);
-    expect(screen.getByText("Trending Movies")).toBeInTheDocument();
-    expect(screen.getByAltText("Inception")).toBeInTheDocument();
+    const trendingSection = document.querySelector(
+      '[data-trending-movies="section"]',
+    );
+    expect(trendingSection).toBeInTheDocument();
+    // Add type assertion and null check
+    expect(trendingSection).not.toBeNull();
+    // Find the image within the trending section
+    const trendingImage = within(trendingSection as HTMLElement).getByAltText(
+      "Inception",
+    );
+    expect(trendingImage).toBeInTheDocument();
   });
 
   it("shows loading spinner when loading movies", () => {

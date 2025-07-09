@@ -8,7 +8,7 @@ const Metrics = ({ metrics }: MetricsProps) => {
   return (
     <>
       {metrics.length > 0 && (
-        <section className="trending">
+        <section className="trending" data-trending-movies="section">
           <h2>Trending Movies</h2>
           <ul>
             {metrics.map((metric: MetricDocument, index: number) => (

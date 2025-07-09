@@ -27,7 +27,7 @@ describe("MovieCard Component", () => {
     // Get all images and find the movie poster by its alt text
     const images = screen.getAllByRole("img");
     const posterImg = images.find(
-      (img) => img.getAttribute("alt") === "Movie poster",
+      (img) => img.getAttribute("alt") === "Test Movie",
     );
     expect(posterImg).toHaveAttribute(
       "src",
@@ -46,7 +46,7 @@ describe("MovieCard Component", () => {
     // Get all images and find the movie poster by its alt text
     const images = screen.getAllByRole("img");
     const posterImg = images.find(
-      (img) => img.getAttribute("alt") === "Movie poster",
+      (img) => img.getAttribute("alt") === "Test Movie",
     );
     expect(posterImg).toHaveAttribute("src", "./placeholder-movie-poster.png");
   });
